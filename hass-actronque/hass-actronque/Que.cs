@@ -1782,7 +1782,9 @@ namespace HMX.HASSActronQue
 
 					// Fan RPM
 					MQTT.SendMessage(string.Format("actronque{0}/fanrpm", unit.Serial), unit.Data.FanRPM.ToString("F0"));
-								
+			
+					// Control All Zones
+					MQTT.SendMessage(string.Format("actronque{0}/controlallzones", unit.Serial), unit.Data.ControlAllZones ? "ON" : "OFF");
 				}
 			}
 
