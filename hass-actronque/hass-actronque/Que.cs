@@ -1739,6 +1739,22 @@ namespace HMX.HASSActronQue
 				}
 				else
 				{
+
+					// Compressor Capacity
+					MQTT.SendMessage(string.Format("actronque{0}/compressorcapacity", unit.Serial), unit.Data.CompressorCapacity.ToString("F1"));
+
+					// Compressor Power
+					MQTT.SendMessage(string.Format("actronque{0}/compressorpower", unit.Serial), unit.Data.CompressorPower.ToString("F2"));
+
+					// Coil Inlet Temperature
+					MQTT.SendMessage(string.Format("actronque{0}/coilinlettemperature", unit.Serial), unit.Data.CoilInletTemperature.ToString("F2"));
+
+					// Fan PWM
+					MQTT.SendMessage(string.Format("actronque{0}/fanpwm", unit.Serial), unit.Data.FanPWM.ToString("F0"));
+
+					// Fan RPM
+					MQTT.SendMessage(string.Format("actronque{0}/fanrpm", unit.Serial), unit.Data.FanRPM.ToString("F0"));
+					
 					switch (unit.Data.CompressorState)
 					{
 						case "HEAT":
