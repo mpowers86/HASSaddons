@@ -3,7 +3,7 @@
   "version": "2025.3.1",
   "slug": "hass-actronque",
   "description": "An add-on for Actron Air Conditioners using the Actron Que or Neo modules.",
-  "url": "https://github.com/mpowers86/hass-actronque",
+  "url": "https://github.com/mpowers86/HASSaddons/hass-actronque",
   "startup": "application",
   "boot": "auto",
   "image": "mpowers86/hass-actronque-{arch}",
