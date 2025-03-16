@@ -6,7 +6,7 @@
   "url": "https://github.com/mpowers86/hass-actronque",
   "startup": "application",
   "boot": "auto",
-  "image": "mikejmcguire/hass-actronque-{arch}",
+  "image": "mpowers86/hass-actronque-{arch}",
   "arch": [
     "amd64",
     "aarch64",
